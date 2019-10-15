@@ -1,0 +1,38 @@
+body {
+text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 2px;
+    height: 13vh;
+  }
+
+  .grid-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+    background-color: lightblue;
+    font-size: 30px;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .inner-grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: lightgreen;
+    padding: 8px;
+  }
+
+  @media screen and (max-width: 720px) {
+    .grid-item {
+        grid-template-columns: auto auto;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .grid-item {
+        grid-template-columns: auto;
+    }
+  }
